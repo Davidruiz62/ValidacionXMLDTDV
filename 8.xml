@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Nombre: David Ruiz
+Curso: Daw1
+Fecha: 04/04/2025
+Ejercicio 8
+-->
+<!--Ejercicio contabilidad-->
+<!DOCTYPE contabilidad [
+    <!ELEMENT contabilidad (apunte*)>
+    <!ELEMENT apunte (ingreso | gasto)>
+    <!ELEMENT ingreso (fecha, cantidad, concepto)>
+    <!ELEMENT gasto (fecha, cantidad, concepto)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT concepto (#PCDATA)>
+]>
+<contabilidad>
+    <apunte>
+        <ingreso>
+            <fecha>24 de febrero de 2011</fecha>
+            <cantidad>1000.00 €</cantidad>
+            <concepto>Salario</concepto>
+        </ingreso>
+    </apunte>
+    <apunte>
+        <gasto>
+            <fecha>28 de febrero de 2011</fecha>
+            <cantidad>42.75 €</cantidad>
+            <concepto>Recibo luz</concepto>
+        </gasto>
+    </apunte>
+</contabilidad>
